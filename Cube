@@ -1,0 +1,9 @@
+;; this can be extended for squaring or placing numbers to the x power. Although there is a sqr function in Racket already.
+;; Num->Num
+;;to compute the cube of a number
+;(define(cube n)
+;..n)
+(check-expect(cube 2)8)
+(check-expect(cube 4) 64)
+(define (cube n)
+(* n n n))
